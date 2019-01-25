@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 /**
- * Multistate attempt
+ * Multistate view
  * Created by enlogy on 2019/1/24 0024.
  */
 public class StatusFrameLayout extends FrameLayout implements StatusView {
@@ -66,7 +66,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Initialization attempts to record the current state
+     * Initialization view to record the current state
      */
     private void initDefaultContentView() {
         defViewGroup = this;
@@ -75,7 +75,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Display default content attempt
+     * Display default content view
      */
     @Override
     public void showContent() {
@@ -99,7 +99,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Display empty content attempt
+     * Display empty content view
      */
     @Override
     public void showEmptyContent() {
@@ -120,7 +120,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Remove the previous attempt
+     * Remove the previous view
      */
     private void removeOldView() {
         switch (viewStatus) {
@@ -153,7 +153,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Set all attempts to gone
+     * Set all view to gone
      *
      * @param defViewGroup Operated object
      */
@@ -166,7 +166,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Display error content attempt
+     * Display error content view
      */
     @Override
     public void showErrorContent() {
@@ -187,7 +187,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Display no network content attempt
+     * Display no network content view
      */
     @Override
     public void showNoNetworkContent() {
@@ -208,7 +208,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Display loading content attempt
+     * Display loading content view
      */
     @Override
     public void showLoadingContent() {
@@ -229,7 +229,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Display extend content attempt
+     * Display extend content view
      */
     @Override
     public void showExtendContent() {
@@ -252,7 +252,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     /**
      * Trying to click response listening
      *
-     * @param viewId   Attempt id
+     * @param viewId   view id
      * @param listener listener
      */
     @Override
@@ -264,10 +264,10 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * An attempt to return the corresponding ID
+     * An view to return the corresponding ID
      *
-     * @param viewId attempt id
-     * @return attempt
+     * @param viewId view id
+     * @return view
      */
     private View getView(int viewId) {
         return views.get(viewId);
@@ -284,7 +284,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Save the visible state of the current attempt
+     * Save the visible state of the current view
      *
      * @param viewGroup Operated object
      * @return Current status array
@@ -300,7 +300,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Save an attempt to click
+     * Save an view to click
      *
      * @param viewGroup Operated object
      * @return Current status array
@@ -314,7 +314,7 @@ public class StatusFrameLayout extends FrameLayout implements StatusView {
     }
 
     /**
-     * Update the visible state of the current attempt
+     * Update the visible state of the current view
      *
      * @param viewGroup   Operated object
      * @param sparseArray State array

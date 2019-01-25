@@ -64,7 +64,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Initialization attempts to record the current state
+     * Initialization view to record the current state
      */
     private void initDefaultContentView() {
         defViewGroup = this;
@@ -73,7 +73,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Display default content attempt
+     * Display default content view
      */
     @Override
     public void showContent() {
@@ -97,7 +97,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Display empty content attempt
+     * Display empty content view
      */
     @Override
     public void showEmptyContent() {
@@ -118,7 +118,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Remove the previous attempt
+     * Remove the previous view
      */
     private void removeOldView() {
         switch (viewStatus) {
@@ -151,7 +151,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Set all attempts to gone
+     * Set all view to gone
      *
      * @param defViewGroup Operated object
      */
@@ -164,7 +164,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Display error content attempt
+     * Display error content view
      */
     @Override
     public void showErrorContent() {
@@ -185,7 +185,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Display no network content attempt
+     * Display no network content view
      */
     @Override
     public void showNoNetworkContent() {
@@ -206,7 +206,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Display loading content attempt
+     * Display loading content view
      */
     @Override
     public void showLoadingContent() {
@@ -227,7 +227,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Display extend content attempt
+     * Display extend content view
      */
     @Override
     public void showExtendContent() {
@@ -250,7 +250,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     /**
      * Trying to click response listening
      *
-     * @param viewId   Attempt id
+     * @param viewId   view id
      * @param listener listener
      */
     @Override
@@ -264,10 +264,10 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * An attempt to return the corresponding ID
+     * An view to return the corresponding ID
      *
-     * @param viewId attempt id
-     * @return attempt
+     * @param viewId view id
+     * @return view
      */
     private View getView(int viewId) {
         return views.get(viewId);
@@ -284,7 +284,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Save the visible state of the current attempt
+     * Save the visible state of the current view
      *
      * @param viewGroup Operated object
      * @return Current status array
@@ -300,7 +300,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Save an attempt to click
+     * Save an view to click
      *
      * @param viewGroup Operated object
      * @return Current status array
@@ -314,7 +314,7 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
     }
 
     /**
-     * Update the visible state of the current attempt
+     * Update the visible state of the current view
      *
      * @param viewGroup   Operated object
      * @param sparseArray State array
