@@ -138,3 +138,8 @@ StatusView.STATUS_EXTEND 扩展视图
 //返回当前的试图状态
 int viewStatus = statusView.getViewStatus();
 ```
+
+## 效果
+[apk下载](https://github.com/Enlogty/StatusView/edit/master/apk/StatusViewSample.apk?raw=true)
+
+![](./img/effect.gif)
