@@ -136,5 +136,5 @@ StatusView.STATUS_NO_NETWORK 无网络视图
 StatusView.STATUS_EXTEND 扩展视图
 //方法
 //返回当前的试图状态
-int viewStatus = getViewStatus();
+int viewStatus = statusView.getViewStatus();
 ```
