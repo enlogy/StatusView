@@ -3,7 +3,7 @@
 </div>
 
 # StatusView 介绍
-可以帮助android开发者减轻多种状态页面切换的代码量，如NoNetwork、Error、Empty等页面轻松切换。
+可以帮助android开发者减轻多种状态页面切换的代码量，如NoNetwork、Error、Empty等页面轻松切换，xml中自定义视图内容。
 
 ## 引入
 
