@@ -140,6 +140,6 @@ int viewStatus = statusView.getViewStatus();
 ```
 
 ## 效果
-[apk下载](https://github.com/Enlogty/StatusView/edit/master/apk/StatusViewSample.apk?raw=true)
+[apk下载](https://github.com/Enlogty/StatusView/blob/master/apk/StatusViewSample.apk?raw=true)
 
 ![](./img/effect.gif)
