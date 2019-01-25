@@ -1,5 +1,5 @@
 <div style="display: flex;flex-direction: row;justify-content: center" width="100%">
-      <img src=".sample/img/logo.png"></img>
+      <img src="./img/logo.png"></img>
 </div>
 
 # StatusView
