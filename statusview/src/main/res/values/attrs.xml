@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StatusRelativeLayout">
+        <attr name="rLoadingView" format="reference" />
+        <attr name="rErrorView" format="reference" />
+        <attr name="rEmptyView" format="reference" />
+        <attr name="rNoNetworkView" format="reference" />
+        <attr name="rContentView" format="reference" />
+        <attr name="rExtendView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusFrameLayout">
+        <attr name="fLoadingView" format="reference" />
+        <attr name="fErrorView" format="reference" />
+        <attr name="fEmptyView" format="reference" />
+        <attr name="fNoNetworkView" format="reference" />
+        <attr name="fContentView" format="reference" />
+        <attr name="fExtendView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusLinearLayout">
+        <attr name="lLoadingView" format="reference" />
+        <attr name="lErrorView" format="reference" />
+        <attr name="lEmptyView" format="reference" />
+        <attr name="lNoNetworkView" format="reference" />
+        <attr name="lContentView" format="reference" />
+        <attr name="lExtendView" format="reference" />
+    </declare-styleable>
+</resources>
