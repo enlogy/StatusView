@@ -27,7 +27,6 @@
 	```
       
 ## 使用
-#### 基础用法
 
 * #### xml中使用,默认显示ContentView里面的视图
 * #### StatusRelativeLayout可以根据需求更改为StatusFrameLayout或者StatusLinearLayout
