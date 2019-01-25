@@ -30,6 +30,7 @@
 #### 基础用法
 
 * #### xml中使用,默认显示ContentView里面的视图
+* #### StatusRelativeLayout可以根据需求更改为StatusFrameLayout或者StatusLinearLayout
 ```xml
  <com.enlogy.statusview.StatusRelativeLayout
         android:id="@+id/status_view"
@@ -42,6 +43,32 @@
         app:rLoadingView="@layout/status_loading"
         app:rNoNetworkView="@layout/status_no_network" />
 
+or
+//当StatusRelativeLayout布局里面同时存在child view和 app:rContentView="@layout/status_content"时，默认显示rContentView的内容，如果
+只存在child view则显示child view。
+<com.enlogy.statusview.StatusRelativeLayout
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rEmptyView="@layout/status_empty"
+        app:rErrorView="@layout/status_error"
+        app:rExtendView="@layout/status_extend"
+        app:rLoadingView="@layout/status_loading"
+        app:rNoNetworkView="@layout/status_no_network">
+	<TextView
+	android:id="@+id/tv"	  
+	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	android:text="Hello World"/>
+	
+	<Button
+        android:layout_below="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="OK"/>
+		
+</com.enlogy.statusview.StatusRelativeLayout>
 ```
 * #### 代码中切换布局  
 ```java
