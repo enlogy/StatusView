@@ -29,7 +29,7 @@
 ## 使用
 #### 基础用法
 
-* #### xml中使用
+* #### xml中使用,默认显示ContentView里面的视图
 ```xml
  <com.enlogy.statusview.StatusRelativeLayout
         android:id="@+id/status_view"
@@ -43,5 +43,45 @@
         app:rNoNetworkView="@layout/status_no_network" />
 
 ```
-      
-      
+* #### 代码中切换布局  
+```java
+ //声明
+ private StatusView statusView;
+ //使用,单一调用直接切换视图
+ statusView.showContent();//主视图
+ statusView.showEmptyContent();//空视图
+ statusView.showErrorContent();//错误视图
+ statusView.showNoNetworkContent();//无网络视图
+ statusView.showLoadingContent();//加载中视图
+ statusView.showExtendContent();//扩展视图
+```      
+* #### 自定义属性说明
+```xml
+使用StatusRelativeLayout时，自定义属性对应r开头
+rContentView 主视图
+rEmptyView 空视图
+rErrorView 错误视图
+rExtendView 扩展视图
+rLoadingView 加载中视图
+rNoNetworkView 无网络视图
+
+or
+
+使用StatusFrameLayout时，自定义属性对应f开头
+fContentView 主视图
+fEmptyView 空视图
+fErrorView 错误视图
+fExtendView 扩展视图
+fLoadingView 加载中视图
+fNoNetworkView 无网络视图
+
+or
+
+使用StatusLinearLayout时，自定义属性对应l开头
+lContentView 主视图
+lEmptyView 空视图
+lErrorView 错误视图
+lExtendView 扩展视图
+lLoadingView 加载中视图
+lNoNetworkView 无网络视图
+```
