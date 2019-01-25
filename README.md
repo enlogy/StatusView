@@ -46,6 +46,7 @@
 or
 //当StatusRelativeLayout布局里面同时存在child view和 app:rContentView="@layout/status_content"时，默认显示rContentView
 的内容，如果只存在child view则显示child view。
+
 <com.enlogy.statusview.StatusRelativeLayout
         android:id="@+id/status_view"
         android:layout_width="match_parent"
