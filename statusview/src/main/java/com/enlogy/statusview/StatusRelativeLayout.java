@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 /**
+ * Multistate view
  * Created by enlogy on 2019/1/24 0024.
  */
 public class StatusRelativeLayout extends RelativeLayout implements StatusView {
