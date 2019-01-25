@@ -3,8 +3,8 @@
 </div>
 
 # StatusView 介绍
-可以帮助android开发者减轻多种状态页面切换的代码量，如NoNetwork、Error、Empty等页面轻松切换。
-
+可以帮助android开发者减轻多种状态页面切换的代码量，如NoNetwork、Error、Empty等页面轻松切换，xml中自定义视图内容。
+自动保存view的状态，不会因为切换页面而丢失状态。
 ## 引入
 
 
@@ -46,6 +46,8 @@
 or
 //当StatusRelativeLayout布局里面同时存在child view和 app:rContentView="@layout/status_content"时，默认显示rContentView
 的内容，如果只存在child view则显示child view。
+
+//推荐，此种形式布局层次更少
 <com.enlogy.statusview.StatusRelativeLayout
         android:id="@+id/status_view"
         android:layout_width="match_parent"
@@ -140,6 +142,6 @@ int viewStatus = statusView.getViewStatus();
 ```
 
 ## 效果
-[apk下载](https://github.com/Enlogty/StatusView/edit/master/apk/StatusViewSample.apk?raw=true)
+[apk下载](https://github.com/Enlogty/StatusView/blob/master/apk/StatusViewSample.apk?raw=true)
 
 ![](./img/effect.gif)
