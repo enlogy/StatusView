@@ -44,8 +44,8 @@
         app:rNoNetworkView="@layout/status_no_network" />
 
 or
-//当StatusRelativeLayout布局里面同时存在child view和 app:rContentView="@layout/status_content"时，默认显示rContentView的内容，如果
-只存在child view则显示child view。
+//当StatusRelativeLayout布局里面同时存在child view和 app:rContentView="@layout/status_content"时，默认显示rContentView
+的内容，如果只存在child view则显示child view。
 <com.enlogy.statusview.StatusRelativeLayout
         android:id="@+id/status_view"
         android:layout_width="match_parent"
@@ -82,6 +82,19 @@ or
  statusView.showLoadingContent();//加载中视图
  statusView.showExtendContent();//扩展视图
 ```      
+* #### 任意视图chlid view的点击监听
+```java
+ //声明
+ private StatusView statusView;
+ //使用,根据xml中对应view的id，进行点击事件的监听
+ statusView.setOnItemClickListener(R.id.tv, new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"Hello World !!!",Toast.LENGTH_SHORT).show();
+            }
+        });
+```  
+## 说明
 * #### 自定义属性说明
 ```xml
 使用StatusRelativeLayout时，自定义属性对应r开头
@@ -111,4 +124,17 @@ lErrorView 错误视图
 lExtendView 扩展视图
 lLoadingView 加载中视图
 lNoNetworkView 无网络视图
+```
+* #### 其它常用方法、常量
+```java
+//状态码
+StatusView.STATUS_CONTENT 主视图
+StatusView.STATUS_LOADING 加载中视图
+StatusView.STATUS_EMPTY 空视图
+StatusView.STATUS_ERROR 错误视图
+StatusView.STATUS_NO_NETWORK 无网络视图
+StatusView.STATUS_EXTEND 扩展视图
+//方法
+//返回当前的试图状态
+int viewStatus = getViewStatus();
 ```
