@@ -23,17 +23,6 @@
    implementation 'com.github.Enlogty:StatusView:1.0.1'
    ```
    
-* Maven
-	
-	```
-      <dependency>
-        <groupId>com.enlogy</groupId>
-        <artifactId>statusview</artifactId>
-        <version>1.0.0</version>
-        <type>pom</type>
-      </dependency>
-	
-	```
       
 ## 使用
 
