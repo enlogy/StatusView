@@ -8,7 +8,7 @@
 可以帮助android开发者减轻多种状态页面切换的代码量，如NoNetwork、Error、Empty等页面轻松切换，xml中自定义视图内容。
 自动保存view的状态，不会因为切换页面而丢失状态。
 ## 引入
-
+[licensesvg]: https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg
 
 * Gradle 
    ```
