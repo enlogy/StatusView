@@ -146,7 +146,7 @@ int viewStatus = statusView.getViewStatus();
 ###  [StatusView](https://github.com/Enlogty/StatusView)  
 
 
-[![License][licensesvg]][license]
+![][licensesvg]
 ## License 
 ```
 Copyright (C)  Enlogty(https://github.com/Enlogty/StatusView)
