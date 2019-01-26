@@ -11,9 +11,16 @@
 
 
 * Gradle 
-   
    ```
-   compile 'com.enlogy:statusview:1.0.0'
+   allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+   ```	
+   ```
+   implementation 'com.github.Enlogty:StatusView:1.0.1'
    ```
    
 * Maven
