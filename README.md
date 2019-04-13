@@ -20,7 +20,7 @@
 	}
    ```	
    ```
-   implementation 'com.github.Enlogty:StatusView:1.0.1'
+   implementation 'com.github.Enlogty:StatusView:1.0.3'
    ```
    
       
